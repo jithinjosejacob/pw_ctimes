@@ -1,10 +1,11 @@
 const { test, expect } = require('@playwright/test');
-const LaunchPage = require('../utils/LaunchPage');
 const { CommentPage } = require('../pageObjects/commentPage');
 
-test.beforeAll(async () => {
+test.beforeAll(async ({browser}) => {
     // Go to the starting url before each test.
-    comment = new CommentPage(await LaunchPage.initialisePage());
+    const context = await browser.newContext();
+    const page = await context.newPage();
+    comment = new CommentPage(page);
     await comment.openUrl('/');
 });
 

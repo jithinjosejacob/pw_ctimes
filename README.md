@@ -14,3 +14,5 @@ Steps
 2) Run npm ci
 
 3) Run npx playwright test
+
+Debugging output in mac - DEBUG=pw:api npx playwright test

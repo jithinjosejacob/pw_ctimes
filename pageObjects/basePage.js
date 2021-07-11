@@ -42,6 +42,10 @@ class BasePage {
         }
     }
 
+    async takeScreenshot(fileName) {
+        await this.page.screenshot({ path: fileName });
+    }
+
 
 }
 

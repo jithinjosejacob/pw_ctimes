@@ -1,0 +1,6 @@
+node_modules
+.vscode
+allure-results
+TC001.png
+videos
+test-results
