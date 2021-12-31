@@ -1,3 +1,6 @@
+This repo contains UI Tests for Canberra Times Website
+Built using Playwright Js and design pattern used is Page Object Model.
+
 Prerequisities
 1) Nodejs should be installed
 
